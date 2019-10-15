@@ -1,0 +1,112 @@
+﻿{
+  "sections": [ {"name_section": "Section 1",
+                 "sectors": [ {"name_sector": "Website:",
+                               "links": [  {"name": "  trendo.im", "link" : "https://trendo.im/"},
+                                           {"name": "  promo.trendo.im", "link" : "https://promo.trendo.im/"},
+                                           {"name": "  coin.trendo.im", "link" : "https://coin.trendo.im/"}
+                                        ]
+                              }
+                            ]  
+                },
+                {"name_section": "Section 2",
+                 "sectors": [ {"name_sector": "Blockchain:",
+                               "links": [  {"name": "Github", "link" : "https://github.com/"},
+                                           {"name": "Block Explorer 1", "link" : "https://github.com/"},
+                                           {"name": "Block Explorer 2", "link" : "https://github.com/"},
+                                           {"name": "Whitepaper", "link" : "https://github.com/"},
+                                           {"name": "Trendo tokenomics", "link" : "https://github.com/"}
+                                        ]
+                              }
+                            ]
+                },
+                {"name_section": "Section 3",
+                 "sectors": [ {"name_sector": "Exchanges:",
+                               "links": [ {"name": "Crex24", "link" : "https://crex24.com/"},
+                                          {"name": "Cryptobridge", "link" : "https://wallet.crypto-bridge.org/"}
+                                        ]
+                              }
+                            ]
+                },
+                              {"name_sector": "Section 4",
+                 "sectors": [ {"name_sector": "Masternode installation guides",
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                        ]
+                              }
+                            ]
+                },
+                              {"name_sector": "Section 5",
+                 "sectors": [ {"name_sector": "Masternode services",
+                               "links": [ {"name": " ", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                      ]
+                              }
+                            ]
+                },
+                              {"name_sector": "Section 6",
+                 "sectors": [ {"name_sector": "Hosting & Shared masternode services",
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                                                                                                          ]
+                              }
+                            ]
+                },
+                              {"name_sector": "Section 7",
+                 "sectors": [ {"name_sector": "Wallets",
+                               "links": [ {"name": "Win 32", "link" : "https://github.com/"},
+                                          {"name": "Win 64", "link" : "https://github.com/"},
+					  {"name": "Ubuntu 16.04", "link" : "https://github.com/"},
+                                          {"name": "Mac OS", "link" : "https://github.com/"}                                                         ]
+                              }
+                            ]
+                },
+                              {"name_sector": "Section 8",
+                 "sectors": [ {"name_sector": "Media",
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                                                                                                          ]
+                              }
+                            ]
+                },
+				                              {"name_sector": "Section 9",
+                 "sectors": [ {"name_sector": "Media",
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                                                                                                          ]
+                              }
+                            ]
+                },
+				                              {"name_sector": "Section 10",
+                 "sectors": [ {"name_sector": "Media",
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                                                                                                          ]
+                              }
+                            ]
+                },
+				                              {"name_sector": "Section 11",
+                 "sectors": [ {"name_sector": "Media",
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                                                                                                          ]
+                              }
+                            ]
+                },
+                              {"name_sector": "Section 12",
+                 "sectors": [ {"name_sector": "Social",
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"},
+                                          {"name": "WebSite", "link" : "https://github.com/"}
+                                        ]
+                              }
+                            ]
+                }
+              ]
+}

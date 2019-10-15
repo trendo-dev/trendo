@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Trendo
+Comment=Trendo P2P Cryptocurrency
+Exec=trendo-qt %u
+Terminal=false
+Type=Application
+Icon=trendo128
+MimeType=x-scheme-handler/trendo;
+Categories=Office;Finance;
+Name[ru]=trendo-qt.desktop.desktop

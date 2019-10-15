@@ -1,0 +1,11 @@
+[Protocol]
+exec=trendo-qt '%u'
+protocol=trendo
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

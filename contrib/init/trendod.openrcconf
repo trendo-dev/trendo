@@ -1,0 +1,26 @@
+# /etc/conf.d/trendod: config file for /etc/init.d/trendod
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/trendo/trendo.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/trendod"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/trendod.pid"
+
+# Where to write trendod data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/trendod"
+
+# User and group to own trendod process
+#BITCOIND_USER="trendo"
+#BITCOIND_GROUP="trendo"
+
+# Path to trendod executable
+#BITCOIND_BIN="/usr/bin/trendod"
+
+# Nice value to run trendod under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

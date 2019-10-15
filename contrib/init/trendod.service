@@ -1,0 +1,26 @@
+[Unit]
+Description=Trendo's distributed currency daemon
+After=network.target
+
+[Service]
+User=trendo
+Group=trendo
+
+Type=forking
+PIDFile=/var/lib/trendod/trendod.pid
+
+ExecStart=/usr/bin/trendod -daemon -pid=/var/lib/trendod/trendod.pid \
+          -conf=/etc/trendo/trendo.conf -datadir=/var/lib/trendod
+
+ExecStop=-/usr/bin/trendo-cli -conf=/etc/trendo/trendo.conf \
+         -datadir=/var/lib/trendod stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
