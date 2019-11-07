@@ -1,83 +1,71 @@
 ﻿{
   "sections": [ {"name_section": "Section 1",
                  "sectors": [ {"name_sector": "Website:",
-                               "links": [  {"name": "  trendo.im", "link" : "https://trendo.im/"},
-                                           {"name": "  promo.trendo.im", "link" : "https://promo.trendo.im/"},
-                                           {"name": "  coin.trendo.im", "link" : "https://coin.trendo.im/"}
+                               "links": [  {"name": "Platform: trendo.im", "link" : "https://trendo.im/"},
+                                           {"name": "For Users: about.trendo.im", "link" : "https://about.trendo.im/"},
+                                           {"name": "For Investors: coin.trendo.im", "link" : "https://coin.trendo.im/"}
                                         ]
                               }
                             ]  
                 },
                 {"name_section": "Section 2",
                  "sectors": [ {"name_sector": "Blockchain:",
-                               "links": [  {"name": "Github", "link" : "https://github.com/"},
-                                           {"name": "Block Explorer 1", "link" : "https://github.com/"},
-                                           {"name": "Block Explorer 2", "link" : "https://github.com/"},
-                                           {"name": "Whitepaper", "link" : "https://github.com/"},
-                                           {"name": "Trendo tokenomics", "link" : "https://github.com/"}
+                               "links": [  {"name": "Github", "link" : "https://github.com/trendo-dev/trendo"},
+                                           {"name": "Block Explorer 1", "link" : "https://explorer.trendo.im/"},
+                                           {"name": "Block Explorer 2", "link" : "http://explorer2.trendo.im/"},
+                                           {"name": "Whitepaper", "link" : "https://coin.trendo.im/landing/white-paper"},
+                                           {"name": "Trendo tokenomics", "link" : "https://coin.trendo.im/#coin_specs"}
                                         ]
                               }
                             ]
                 },
                 {"name_section": "Section 3",
                  "sectors": [ {"name_sector": "Exchanges:",
-                               "links": [ {"name": "Crex24", "link" : "https://crex24.com/"},
-                                          {"name": "Cryptobridge", "link" : "https://wallet.crypto-bridge.org/"}
+                               "links": [ {"name": "Crex24", "link" : "https://crex24.com/"}
                                         ]
                               }
                             ]
                 },
                               {"name_sector": "Section 4",
                  "sectors": [ {"name_sector": "Masternode installation guides",
-                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"}
+                               "links": [ {"name": "Soon", "link" : "https://github.com/"}
                                         ]
                               }
                             ]
                 },
                               {"name_sector": "Section 5",
                  "sectors": [ {"name_sector": "Masternode services",
-                               "links": [ {"name": " ", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"}
+                               "links": [ {"name": "Soon", "link" : "https://github.com/"}
                                       ]
                               }
                             ]
                 },
                               {"name_sector": "Section 6",
                  "sectors": [ {"name_sector": "Hosting & Shared masternode services",
-                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"}
+                               "links": [ {"name": "Soon", "link" : "https://github.com/"}
                                                                                                                           ]
                               }
                             ]
                 },
                               {"name_sector": "Section 7",
                  "sectors": [ {"name_sector": "Wallets",
-                               "links": [ {"name": "Win 32", "link" : "https://github.com/"},
-                                          {"name": "Win 64", "link" : "https://github.com/"},
-					  {"name": "Ubuntu 16.04", "link" : "https://github.com/"},
-                                          {"name": "Mac OS", "link" : "https://github.com/"}                                                         ]
+                               "links": [ {"name": "Win 32", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-qt-1.0.0-windows-32.exe"},
+                                          {"name": "Win 64", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-qt-1.0.0-windows-64.exe"},
+					  {"name": "Ubuntu 16.04 daemon", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-daemon-1.0.0-ubuntu.tar"},
+                                          {"name": "Mac OS", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-qt-1.0.0-macOS.dmg"}                                                         ]
                               }
                             ]
                 },
                               {"name_sector": "Section 8",
                  "sectors": [ {"name_sector": "Media",
-                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"}
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"}
                                                                                                                           ]
                               }
                             ]
                 },
 				                              {"name_sector": "Section 9",
                  "sectors": [ {"name_sector": "Media",
-                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"}
-                                                                                                                          ]
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"}                                                                                                                      ]
                               }
                             ]
                 },
@@ -101,9 +89,7 @@
                 },
                               {"name_sector": "Section 12",
                  "sectors": [ {"name_sector": "Social",
-                               "links": [ {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"},
-                                          {"name": "WebSite", "link" : "https://github.com/"}
+                               "links": [ {"name": "WebSite", "link" : "https://github.com/"}
                                         ]
                               }
                             ]
