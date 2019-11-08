@@ -9,21 +9,22 @@
                             ]  
                 },
                 {"name_section": "Section 2",
-                 "sectors": [ {"name_sector": "Blockchain:",
+                 "sectors": [ {"name_sector": "Our Blockchain:",
                                "links": [  {"name": "Our Github", "link" : "https://github.com/trendo-dev/trendo"},
                                            {"name": "Block Explorer 1", "link" : "https://explorer.trendo.im/"},
                                            {"name": "Block Explorer 2", "link" : "http://explorer2.trendo.im/"},
                                            {"name": "Whitepaper", "link" : "https://coin.trendo.im/landing/white-paper"},
-                                           {"name": "Trendo tokenomics", "link" : "https://coin.trendo.im/#coin_specs"}
+                                           {"name": "Tokenomics", "link" : "https://coin.trendo.im/#coin_specs"}
                                         ]
                               }
                             ]
                 },
                 {"name_section": "Section 3",
-                 "sectors": [ {"name_sector": "Exchanges:",
-                               "links": [ {"name": "Crex24", "link" : "https://crex24.com/"}
-                                        ]
-                              }
+                 "sectors": [ {"name_sector": "Trading:",
+                               "links": [ {"name": "Crex24", "link" : "https://crex24.com/ru/exchange/TRND-BTC"},
+				          {"name": "Delta app", "link" : "https://delta.app/en/crypto/trnd/trendo"},
+					  {"name": "Blockfolio app", "link" : "https://blockfolio.com/coin/TRND"}
+
                             ]
                 },
                               {"name_sector": "Section 4",
