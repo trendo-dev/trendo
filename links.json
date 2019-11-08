@@ -43,7 +43,7 @@
                             ]
                 },
                               {"name_sector": "Section 6",
-                 "sectors": [ {"name_sector": "Hosting & Shared masternode services",
+                 "sectors": [ {"name_sector": "Hosting & Shared services",
                                "links": [ {"name": "Soon", "link" : "https://github.com/"}
                                                                                                                           ]
                               }
@@ -53,8 +53,8 @@
                  "sectors": [ {"name_sector": "Wallets",
                                "links": [ {"name": "Win 32", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-qt-1.0.0-windows-32.exe"},
                                           {"name": "Win 64", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-qt-1.0.0-windows-64.exe"},
-					  {"name": "Ubuntu 16.04", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-daemon-1.0.0-ubuntu.tar"},
-                                          {"name": "Mac OS", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-qt-1.0.0-macOS.dmg"}
+                                          {"name": "Mac OS", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-qt-1.0.0-macOS.dmg"},
+                                          {"name": "Ubuntu 16.04", "link" : "https://github.com/trendo-dev/trendo/releases/download/1.0.0/trendo-daemon-1.0.0-ubuntu.tar"}
 					]
                               }
                             ]
@@ -82,7 +82,7 @@
                               }
                             ]
                 },
-				                              {"name_sector": "Section 11",
+			 {"name_sector": "Section 11",
                  "sectors": [ {"name_sector": "Media",
                                "links": [ {"name": "WebSite", "link" : "https://github.com/"},
                                           {"name": "WebSite", "link" : "https://github.com/"},
