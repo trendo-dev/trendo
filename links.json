@@ -24,7 +24,8 @@
                                "links": [ {"name": "Crex24", "link" : "https://crex24.com/ru/exchange/TRND-BTC"},
 				          {"name": "Delta app", "link" : "https://delta.app/en/crypto/trnd/trendo"},
 					  {"name": "Blockfolio app", "link" : "https://blockfolio.com/coin/TRND"}
-
+					]
+			      }
                             ]
                 },
                               {"name_sector": "Section 4",
