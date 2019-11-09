@@ -1,7 +1,7 @@
 ﻿{
   "sections": [ {"name_section": "Section 1",
                  "sectors": [ {"name_sector": "Website:",
-                               "links": [  {"name": "Our Platform (trendo.im)", "link" : "https://trendo.im/"},
+                               "links": [  {"name": "Platform (trendo.im)", "link" : "https://trendo.im/"},
                                            {"name": "Info for Users", "link" : "https://about.trendo.im/"},
                                            {"name": "Info for Investors", "link" : "https://coin.trendo.im/"}
                                         ]
@@ -9,8 +9,8 @@
                             ]  
                 },
                 {"name_section": "Section 2",
-                 "sectors": [ {"name_sector": "Our Blockchain:",
-                               "links": [  {"name": "Our Github", "link" : "https://github.com/trendo-dev/trendo"},
+                 "sectors": [ {"name_sector": "Blockchain:",
+                               "links": [  {"name": "Github", "link" : "https://github.com/trendo-dev/trendo"},
                                            {"name": "Block Explorer 1", "link" : "https://explorer.trendo.im/"},
                                            {"name": "Block Explorer 2", "link" : "http://explorer2.trendo.im/"},
                                            {"name": "Whitepaper", "link" : "https://coin.trendo.im/landing/white-paper"},
