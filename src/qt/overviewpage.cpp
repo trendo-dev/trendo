@@ -274,7 +274,7 @@ double pricecrex24;// Bpricecrex24;
         QJsonValue value=object.value("Tickers");
         QJsonArray tickersArray = value.toArray();
         foreach (const QJsonValue & v, tickersArray)
-            if(v.toObject().value("PairId").toDouble()==25)
+            if(v.toObject().value("PairId").toDouble()==1359)
             {
                pricecrex24 = v.toObject().value("Last").toDouble();
                qDebug()<<pricecrex24;
@@ -359,40 +359,35 @@ double immatureBalance;
 double currentBalance2;
 
 void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, const CAmount& anonymizedBalance, const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance)
+
 {
     currentBalance = balance - immatureBalance;
-	currentBalance2 = balance;
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
     currentAnonymizedBalance = anonymizedBalance;
     currentWatchOnlyBalance = watchOnlyBalance;
     currentWatchUnconfBalance = watchUnconfBalance;
     currentWatchImmatureBalance = watchImmatureBalance;
-    CAmount nLockedBalance = 0;
-    if (pwalletMain) {
-        nLockedBalance = pwalletMain->GetLockedCoins();
-    }
-CAmount lockedcoinsMN_stake =((currentBalance + unconfirmedBalance + immatureBalance) - nLockedBalance)+immatureBalance;
-   CAmount lockedcoinsMN2_stake = ((currentBalance + unconfirmedBalance + immatureBalance) - nLockedBalance);
+CAmount Unlockedcoinove =(currentBalance + unconfirmedBalance + immatureBalance);
 
-   // Trendo labels
-CAmount Unlockedcoinove =(currentBalance2 + unconfirmedBalance + immatureBalance) - lockedcoinsMN_stake;
+    // esbcoin labels
 
     if(balance != 0)
-    //ui->labelBalance->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, currentBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, currentBalance + unconfirmedBalance + immatureBalance, false, BitcoinUnits::separatorAlways));
-
-    ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelImmature->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelTotal->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit,(currentBalance2 + unconfirmedBalance + immatureBalance), false, BitcoinUnits::separatorAlways));
-    ui->label_LockedCoin_value_2->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, lockedcoinsMN2_stake, false, BitcoinUnits::separatorAlways));
+        ui->labelBalance->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, currentBalance, false, BitcoinUnits::separatorNever));
+    ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorNever));
+    ui->labelImmature->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorNever));
+    ui->labelTotal->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, currentBalance + unconfirmedBalance + immatureBalance, false, BitcoinUnits::separatorNever));
 	ui->label_unlokedCoin_value_2->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, Unlockedcoinove, false, BitcoinUnits::separatorAlways));
+
 
     // Watchonly labels
       // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users
     bool showImmature = immatureBalance != 0;
     bool showWatchOnlyImmature = watchImmatureBalance != 0;
+    ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature);
+    ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
+
 
     updateObfuscationProgress();
 
@@ -672,44 +667,39 @@ void OverviewPage::on_comboBox_activated(int index)
 void OverviewPage::updatBlockChainInfo()
 {
     if (masternodeSync.IsBlockchainSynced())
+
  {
-	 int nStakeModifier =0;
+	int nStakeModifier =0;
         int CurrentBlock = (int)chainActive.Height();
+		
+		
+        int CurrentBlock24 = (int)chainActive.Height();
+		/*
+	if (CurrentBlock24 <= 2880)
+		{
+		ui->label_24hBlock_value->setText(QString::number(CurrentBlock24));
+		}
+		*/
+		
+
+		
+		
         int64_t netHashRate = chainActive.GetNetworkHashPS(24, CurrentBlock-1);
         double BlockReward = GetBlockValue(chainActive.Height());
         double BlockRewardTrendo =  static_cast<double>(BlockReward/COIN);
         double CurrentDiff = GetDifficulty();
+    double nethash_mhs = static_cast<double>(netHashRate/1000000) ;
 
-//IsCoinStake
         ui->label_CurrentBlock_value->setText(QString::number(CurrentBlock));
-        ui->label_Nethash->setText(tr("Difficulty:"));
-        ui->label_CurrentBlock_value->setText(QString::number(CurrentBlock));
-        ui->label_Nethash_value->setText(QString::number(CurrentDiff,'f',4));
+        ui->label_Nethash_value_2->setText(QString::number(nethash_mhs,'f',0));
         ui->label_CurrentBlockReward_value->setText(QString::number(BlockRewardTrendo, 'f', 2).append(""));
-        ui->label_Supply_value->setText(QString::number(chainActive.Tip()->nMoneySupply / COIN).append(" TRND"));
+       	ui->label_Supply_value->setText(QString::number(chainActive.Tip()->nMoneySupply / COIN).append(" TRND"));
+		
         ui->label_24hBlock_value->setText(QString::number(block24hCount));
-		        ui->label_24hPoS_value->setText(QString::number(static_cast<double>(CurrentDiff),'f',1));
-
-double  nethash_mhs = static_cast<double>(netHashRate/1000000) ;
+			  
 
 
-if (nethash_mhs >= 1000000)
-{
-    ui->label_Nethash->setText(tr("Nethash THs:"));
-    ui->label_Nethash_value->setText(QString::number(nethash_mhs/1000000,'f',2));
-}
 
-else if  (nethash_mhs >= 1000)
-{
-    ui->label_Nethash->setText(tr("Nethash GHs:"));
-    ui->label_Nethash_value->setText(QString::number(nethash_mhs/1000,'f',2));
-}
-
-else
-{
-    ui->label_Nethash->setText(tr("Nethash MHs:"));
-    ui->label_Nethash_value->setText(QString::number(nethash_mhs));
-}
   }
 }
 

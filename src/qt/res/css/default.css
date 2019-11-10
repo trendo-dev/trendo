@@ -691,6 +691,7 @@ color:#273645
     }
 
     QTableView::item:selected { /* Table Item Selected */
+	background-color:#fce8e6;
         background-repeat:none;
         border-style: none;
      font: "OpenSans";
@@ -2835,6 +2836,23 @@ width: 31px;
 	 
 	 
 	 	 	      QWidget .QFrame#frame_blue .QLabel#label_24hPoS_value{ /*available text */
+ width: 162px;
+  height: 17px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #273645;
+      font: "OpenSans";
+	         margin-top: 3px;
+
+     }
+	 
+	 
+	 	 	 	      QWidget .QFrame#frame_blue .QLabel#label_Nethash_value_2{ /*available text */
  width: 162px;
   height: 17px;
   font-family: OpenSans;

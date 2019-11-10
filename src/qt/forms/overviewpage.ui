@@ -960,7 +960,7 @@
      </size>
     </property>
     <property name="text">
-     <string>-</string>
+     <string>0</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignVCenter</set>
@@ -1072,7 +1072,7 @@
      </size>
     </property>
     <property name="text">
-     <string/>
+     <string>-</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignVCenter</set>

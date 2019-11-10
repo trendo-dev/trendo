@@ -1733,6 +1733,9 @@ CAmount GetBlockValue(int nHeight)
       nSubsidy = 0;
 
     return nSubsidy;
+	
+	    int64_t netHashRate = chainActive.GetNetworkHashPS(24, nHeight);
+
 }
 
 

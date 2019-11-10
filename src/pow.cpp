@@ -6,16 +6,13 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "pow.h"
-
 #include "chain.h"
 #include "chainparams.h"
 #include "main.h"
 #include "primitives/block.h"
 #include "uint256.h"
 #include "util.h"
-
 #include <math.h>
-
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast)
 {
@@ -63,6 +60,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast)
 	
     bool is_hexhash_work = true;
 
+
     for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
         if (PastBlocksMax > 0 && i > PastBlocksMax) {
             break;
@@ -94,8 +92,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast)
 
     uint256 bnNew(PastDifficultyAverage);
 
-    int64_t _nTargetTimespan = CountBlocks * (pindexLast->nHeight > 750000 ? Params().TargetSpacing() : Params().TargetSpacingSlowLaunch());
-
+    int64_t _nTargetTimespan = CountBlocks * (pindexLast->nHeight > 35000 ? Params().TargetSpacing() : Params().TargetSpacingSlowLaunch());
     if (nActualTimespan < _nTargetTimespan / 3)
         nActualTimespan = _nTargetTimespan / 3;
     if (nActualTimespan > _nTargetTimespan * 3)
