@@ -3,7 +3,8 @@
                  "sectors": [ {"name_sector": "Website:",
                                "links": [  {"name": "Platform (trendo.im)", "link" : "https://trendo.im/"},
                                            {"name": "Info for Users", "link" : "https://about.trendo.im/"},
-                                           {"name": "Info for Investors", "link" : "https://coin.trendo.im/"}
+                                           {"name": "Info for Investors", "link" : "https://coin.trendo.im/"},
+					 {"name": "Discord", "link" : "https://discord.gg/9FE5QF4"},
                                         ]
                               }
                             ]  
