@@ -1,2 +1,2 @@
-Trendo Coin v1.0.0
+Trendo Coin v1.2.0
 First official release
