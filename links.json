@@ -60,10 +60,12 @@
                             ]
                 },
                               {"name_sector": "Section 8",
-                 "sectors": [ {"name_sector": "Media",
-                               "links": [ {"name": "Soon", "link" : "https://github.com/"}
-                                        ]
-                              }
+		"sectors": [ {"name_sector": "Community",
+                               "links": [ {"name": "Discord", "link" : "https://discord.gg/9FE5QF4"},
+					  {"name": "Instagram", "link" : "https://www.instagram.com/trendoim/"}
+					]
+					 
+                              }                        
                             ]
                 },
 			     {"name_sector": "Section 9",
