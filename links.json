@@ -62,9 +62,11 @@
                               {"name_sector": "Section 8",
 		"sectors": [ {"name_sector": "Community",
                                "links": [ {"name": "Discord", "link" : "https://discord.gg/9FE5QF4"},
-					  {"name": "Instagram", "link" : "https://www.instagram.com/trendoim/"}
+					  {"name": "Instagram", "link" : "https://www.instagram.com/trendoim/"},
+					  {"name": "Bitcointalk ANN (ENG)", "link" : "https://bitcointalk.org/index.php?topic=5204144"},
+					  {"name": "Bitcointalk ANN (RUS)", "link" : "https://bitcointalk.org/index.php?topic=5204146"},
+					  {"name": "Twitter", "link" : "https://twitter.com/TrendoIm"}
 					]
-					 
                               }                        
                             ]
                 },
