@@ -44,8 +44,10 @@
                 },
                               {"name_sector": "Section 6",
                  "sectors": [ {"name_sector": "Hosting & Shared services",
-                               "links": [ {"name": "Soon", "link" : "https://github.com/"}
-                                                                                                                          ]
+                               "links": [ {"name": "Gentarium", "link" : "https://mn.gtmcoin.io/coin/291"},
+					  {"name": "Trittium", "link" : "https://node.trittium.cc/coins/228"},
+					  {"name": "Stake Of Stake", "link" : "https://www.stackofstake.com"}
+					]
                               }
                             ]
                 },
